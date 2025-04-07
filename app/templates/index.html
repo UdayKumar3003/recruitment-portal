@@ -1,0 +1,16 @@
+# app/templates/index.html
+
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Available Jobs</h1>
+    {% for job in jobs %}
+        <div class="job">
+            <h3>{{ job.title }}</h3>
+            <p>Skills: {{ job.skills }}</p>
+            <p>Experience: {{ job.experience }}</p>
+            <p>Openings: {{ job.openings }}</p>
+            <p>Budget: {{ job.budget }}</p>
+            <a href="/job/{{ job.id }}/apply">Apply</a>
+        </div>
+    {% endfor %}
+{% endblock %}

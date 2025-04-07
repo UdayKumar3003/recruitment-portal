@@ -1,0 +1,24 @@
+# app/static/css/styles.css
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.navbar a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.job, .application {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+form input {
+    display: block;
+    margin: 5px 0;
+    padding: 5px;
+    width: 300px;
+}

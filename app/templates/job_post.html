@@ -1,0 +1,13 @@
+# app/templates/job_post.html
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Post a New Job</h2>
+    <form method="post">
+        <input name="title" placeholder="Job Title"><br>
+        <input name="skills" placeholder="Skills Required"><br>
+        <input name="experience" placeholder="Experience"><br>
+        <input name="openings" placeholder="Number of Openings" type="number"><br>
+        <input name="budget" placeholder="Budget"><br>
+        <button type="submit">Post Job</button>
+    </form>
+{% endblock %}

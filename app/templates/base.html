@@ -1,0 +1,18 @@
+# app/templates/base.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruitment Portal</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/job/post">Post a Job</a>
+        <a href="/applications">View Applications</a>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

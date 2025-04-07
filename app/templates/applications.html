@@ -1,0 +1,12 @@
+# app/templates/applications.html
+{% extends 'base.html' %}
+{% block content %}
+    <h2>All Applications</h2>
+    {% for app in applications %}
+        <div class="application">
+            <p>Name: {{ app.name }}</p>
+            <p>Email: {{ app.email }}</p>
+            <p>Resume: <a href="{{ app.resume }}">View</a></p>
+        </div>
+    {% endfor %}
+{% endblock %}
